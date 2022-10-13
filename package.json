@@ -1,7 +1,7 @@
 {
   "name": "@lemma-finance/lemmaswap-sdk",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.4",
+  "description": "estimate amountsOut for lemmaswap",
   "main": "src/index.js",
   "scripts": {
     "test": "jest"
@@ -11,18 +11,21 @@
     "url": "git+https://github.com/lemma-finance/lemmaswap-sdk.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "lemma-finance",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/lemma-finance/lemmaswap-sdk/issues"
   },
   "homepage": "https://github.com/lemma-finance/lemmaswap-sdk#readme",
   "dependencies": {
-    "@lemma-finance/lemmaswap-sdk": "./",
+    "@lemma-finance/lemmaswap-sdk": "1.0.4",
     "dotenv": "^10.0.0",
     "ethers": "^5.4.6"
   },
   "devDependencies": {
     "jest": "^29.1.2"
+  },
+  "directories": {
+    "test": "test"
   }
 }
