@@ -1,6 +1,6 @@
 {
   "name": "@lemma-finance/lemmaswap-sdk",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "estimate amountsOut for lemmaswap",
   "main": "src/index.js",
   "scripts": {
@@ -10,7 +10,13 @@
     "type": "git",
     "url": "git+https://github.com/lemma-finance/lemmaswap-sdk.git"
   },
-  "keywords": [],
+  "keywords": [
+    "Lemma Finance",
+    "LemmaSwap",
+    "DEX",
+    "DeFi",
+    "sdk"
+  ],
   "author": "lemma-finance",
   "license": "ISC",
   "bugs": {
@@ -18,7 +24,7 @@
   },
   "homepage": "https://github.com/lemma-finance/lemmaswap-sdk#readme",
   "dependencies": {
-    "@lemma-finance/lemmaswap-sdk": "1.0.6",
+    "@lemma-finance/lemmaswap-sdk": "1.0.7",
     "dotenv": "^10.0.0",
     "ethers": "^5.4.6"
   },
