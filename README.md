@@ -22,8 +22,8 @@ signer = new ethers.Wallet(process.env.PRIV_KEY, provider);
 
 const lemmaSwap = new ethers.Contract("0x6b283cbcd24fdf67e1c4e23d28815c2607eefe29", LemmaSwapArtifacts.abi, signer);
 const erc20 = new ethers.Contract(AddressZero, ERC20Artifacts.abi, signer);
-const tokenIn = "0x4200000000000000000000000000000000000006"; //WETH
-const tokenOut = "0x68f180fcce6836688e9084f035309e29bf0a2095"; //WBTC
+const tokenIn = "0x68f180fcce6836688e9084f035309e29bf0a2095"; //WBTC
+const tokenOut = "0x4200000000000000000000000000000000000006"; //WETH
 
 const swapTokensForTokens = async (fromAmount, fromToken, toToken) => {
     const path = [fromToken, toToken];
