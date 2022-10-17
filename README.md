@@ -13,14 +13,14 @@ const { BigNumber, constants, utils } = ethers;
 const { MaxUint256, AddressZero } = constants;
 const { parseUnits } = utils;
 
-const LemmaSwapArtifacts = require("../../abis/LemmaSwap.json");// ABI for LemmaSwap (get it here: https://optimistic.etherscan.io/address/0x29e8dd7383acc9ac316dfc9055c177fe748a0be5#code)
+const LemmaSwapArtifacts = require("../../abis/LemmaSwap.json");// ABI for LemmaSwap (get it here: https://optimistic.etherscan.io/address/0x6b283cbcd24fdf67e1c4e23d28815c2607eefe29#code)
 const ERC20Artifacts = require("../../abis/ERC20.json"); // ABI for an ERC20 
 
 const optimismProvider = process.env.PROVIDER; //If for Infura Provider it does not work , try with alchemy provider. 
 const provider = ethers.getDefaultProvider(optimismProvider);
 signer = new ethers.Wallet(process.env.PRIV_KEY, provider);
 
-const lemmaSwap = new ethers.Contract("0x29e8dd7383acc9ac316dfc9055c177fe748a0be5", LemmaSwapArtifacts.abi, signer);
+const lemmaSwap = new ethers.Contract("0x6b283cbcd24fdf67e1c4e23d28815c2607eefe29", LemmaSwapArtifacts.abi, signer);
 const erc20 = new ethers.Contract(AddressZero, ERC20Artifacts.abi, signer);
 const tokenIn = "0x4200000000000000000000000000000000000006"; //WETH
 const tokenOut = "0x68f180fcce6836688e9084f035309e29bf0a2095"; //WBTC
