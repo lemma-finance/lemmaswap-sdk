@@ -1,6 +1,6 @@
 {
   "name": "@lemma-finance/lemmaswap-sdk",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "estimate amountsOut for lemmaswap",
   "main": "src/index.js",
   "scripts": {
@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/lemma-finance/lemmaswap-sdk#readme",
   "dependencies": {
-    "@lemma-finance/lemmaswap-sdk": "1.0.7",
+    "@lemma-finance/lemmaswap-sdk": "1.0.8",
     "dotenv": "^10.0.0",
     "ethers": "^5.4.6"
   },
