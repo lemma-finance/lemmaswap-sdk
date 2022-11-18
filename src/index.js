@@ -27,7 +27,7 @@ const optimismProvider = ethers.getDefaultProvider(defaultOptimismProvider);
 const getAmountsOut = async (provider, lemmaSwapAddress, fromAmount, path) => {
     provider = provider == null ? optimismProvider : provider;
     const forwarder = new ethers.Contract(FORWARDER_ADDRESS, FORWARDER_ARTIFACT.abi, provider);
-    const whaleWallet = whaleWallets[path[0]];
+    const whaleWallet = whaleWallets[path[0].toLowerCase()];
     //see here for more info on how it is achieved: https://github.com/dragonfly-xyz/useful-solidity-patterns/tree/main/patterns/eth_call-tricks#example-simulating-complex-swaps
     const rawResult = await provider.send(
         'eth_call',

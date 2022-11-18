@@ -1,6 +1,6 @@
 {
   "name": "@lemma-finance/lemmaswap-sdk",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "description": "estimate amountsOut for lemmaswap",
   "main": "src/index.js",
   "scripts": {
